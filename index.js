@@ -40,7 +40,7 @@ app.get("/api/beers/:name", (req, res) => {
 
 app.post("/api/beers", (req, res) => {
   Beer.create(req.body).then((beer) => {
-    res.json(beers)
+    res.json(beer)
   })
 })
 

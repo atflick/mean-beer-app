@@ -74,6 +74,7 @@ angular
     }
   }
 
+
   function BeersShowControllerFunction($stateParams, $state, BeerFactory) {
     this.beer = BeerFactory.get({name: $stateParams.name})
     this.update = function() {
