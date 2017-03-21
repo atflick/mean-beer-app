@@ -31,23 +31,23 @@ angular
     $stateProvider
       .state("welcome", {
         url: "/",
-        templateUrl: "/public/js/ng-views/welcome.html"  //trying something different here, may need to cange to assets
+        templateUrl: "/assets/js/ng-views/welcome.html"  //trying something different here, may need to cange to assets
       })
       .state("beersIndex", {
         url: "/beers",
-        templateUrl: "/public/js/ng-views/beers/index.html",
+        templateUrl: "/assets/js/ng-views/beers/index.html",
         controller: "beersIndexCtrl",
         controllerAs: "vm"
       })
       .state("beersNew", {
         url: "/beers/new",
-        templateUrl: "/public/js/ng-views/beers/new.html",
+        templateUrl: "/assets/js/ng-views/beers/new.html",
         controller: "beersNewCtrl",
         controllerAs: "vm"
       })
       .state("beersShow", {
         url: "/beers/:name",
-        templateUrl: "/public/js/ng-views/beers/show.html",
+        templateUrl: "/assets/js/ng-views/beers/show.html",
         controller: "beersShowCtrl",
         controllerAs: "vm"
       })

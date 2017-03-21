@@ -4,6 +4,7 @@ const parser =      require('body-parser')
 const hbs =         require('express-handlebars')
 const mongoose =    require('./db/connection.js')
 
+var Beer = mongoose.model("Beer")
 
 app.set("port", process.env.PORT || 3001)
 

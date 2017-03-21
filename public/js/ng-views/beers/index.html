@@ -1,0 +1,8 @@
+<h2>Beer Selection</h2>
+
+<div class="on-tap" data-ng-repeat="beer in vm.beers">
+  <div class="bottle">
+    <h3>{{beer.name}}</h3>
+    <img ng-src="{{beer.image_url}}">
+  </div>
+</div>
