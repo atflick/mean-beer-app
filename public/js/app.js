@@ -23,6 +23,7 @@ angular
   ])
   .controller("beersShowCtrl", [
     "$stateParams",
+    "$state",
     "BeerFactory",
     BeersShowControllerFunction
   ])
@@ -73,9 +74,11 @@ angular
     }
   }
 
-  function BeersShowControllerFunction($state, BeerFactory) {
+  function BeersShowControllerFunction($stateParams, $state, BeerFactory) {
     this.beer = BeerFactory.get({name: $stateParams.name})
     this.update = function() {
-      this.beer.$update({name:$stateParams.name})
+      this.beer.$update({name:$stateParams.name}, (beer) => {
+        $state.go("beersShow", {name: beer.name})
+      })
     }
   }

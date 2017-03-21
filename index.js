@@ -51,7 +51,7 @@ app.delete("/api/beers/:name", (req, res) => {
 })
 
 app.put("/api/beers/:name", (req, res) => {
-  Beer.findOneAndUpdate({name: req.params.name}, req.body.beer, {new: true}).then((beer) => {
+  Beer.findOneAndUpdate({name: req.params.name}, req.body, {new: true}).then((beer) => {
     res.json(beer)
   })
 })

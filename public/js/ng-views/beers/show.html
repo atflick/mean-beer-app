@@ -1,1 +1,16 @@
-<h2>{{vm.beer.name}} </h2>
+<h3>{{vm.beer.name}}</h3>
+<img ng-src="{{vm.beer.image_url}}">
+<h2>{{vm.beer.brewery}}</h2>
+<p>{{vm.beer.description}}</p>
+
+
+
+  <button class="edit_button" ng-click="edit = !edit">Edit</button>
+    <div class="edit_form">
+      <form class="editing" ng-show="edit" ng-submit="vm.update()">
+        <input ng-model="vm.beer.name">
+        <input ng-model="vm.beer.image_url">
+        <input ng-model="vm.beer.brewery">
+        <input ng-model="vm.beer.description">
+        <button type="submit" ng-show="edit">Update</button>
+    </div>
