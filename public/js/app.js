@@ -82,4 +82,9 @@ angular
         $state.go("beersShow", {name: beer.name})
       })
     }
+    this.delete = function() {
+      this.beer.$delete({name:$stateParams.name}).then(function() {
+        $state.go("beersIndex")
+      })
+    }
   }
