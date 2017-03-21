@@ -25,6 +25,36 @@ app.get("/", (req, res) => {
   res.render("beers")
 })
 
+app.get("/api/beers", (req, res) => {
+  Beer.find({}).then((beers) => {
+    res.json(beers)
+  })
+})
+
+app.get("/api/beers/:name", (req, res) => {
+  Beer.findOne({name: req.params.name}).then((beer) => {
+    res.json(beer)
+  })
+})
+
+app.post("/api/beers", (req, res) => {
+  Beer.create(req.body).then((beer) => {
+    res.json(beers)
+  })
+})
+
+app.delete("/api/beers/:name", (req, res) => {
+  Beer.findOneAndRemove({name: req.params.name}).then(() => {
+    res.json({success: true})
+  })
+})
+
+app.put("/api/beers/:name", (req, res) => {
+  Beer.findOneAndUpdate({name: req.params.name}, req.body.beer, {new: true}).then((beer) => {
+    res.json(beer)
+  })
+})
+
 app.listen(app.get("port"), () => {
   console.log('App is listening')
 })
