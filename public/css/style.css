@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
 
 }
@@ -24,8 +29,42 @@ section {
 }
 
 .beer-container {
-  /*background: url("../images/shelf-bg.jpg");*/
   height: 205px;
   width: 150px;
+  cursor: pointer;
+}
+.beer-container h3 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 3px gray;
+  cursor: pointer;
+}
 
+.beer-bottle {
+  height: 180px;
+  background: url("../images/beerbottle.png");
+  background-size: 100px 170px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+.beer-bottle:hover {
+  height: 180px;
+  background: url("../images/beerbottle-hover.png");
+  background-size: 100px 170px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.beer-container img {
+  height: 70px;
+  width: 59px;
+  object-fit: cover;
+  margin-top: 90px;
+  margin-left: 48px;
+  border: 0px solid #000;
+  border-radius: 8px;
 }

@@ -4,17 +4,14 @@
 
 </section>
 <section class="shelf-bg">
-  <div class="beer-container">
-
+  <div class="beer-container" data-ng-repeat="beer in vm.beers" ui-sref="beersShow({name: beer.name})">
+    <div class="beer-bottle">
+      <img ng-src="{{beer.image_url}}">
+    </div>
+    <h3>{{beer.name}}</h3>
   </div>
 </section>
 
-<div class="on-tap" data-ng-repeat="beer in vm.beers" ui-sref="beersShow({name: beer.name})">
-  <div class="bottle">
-    <h3>{{beer.name}}</h3>
-    <img ng-src="{{beer.image_url}}">
-  </div>
-</div>
 
 
 <button ui-sref="beersNew">Add Beer</button>
