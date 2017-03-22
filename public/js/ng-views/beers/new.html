@@ -1,9 +1,20 @@
+<div class="buttonbg">
+  <a data-ui-sref="beersIndex"><button>Home</button></a>
+</div>
+
 <h2>Add New Beer</h2>
 
-<form class="" ng-submit="vm.create()" method="post">
-  <input placeholder="Name" ng-model="vm.newBeer.name">
-  <input placeholder="Brewery" ng-model="vm.newBeer.brewery">
-  <input placeholder="Logo" ng-model="vm.newBeer.image_url">
-  <input placeholder="Description" ng-model="vm.newBeer.description">
-  <button type="submit">Add Beer</button>
-</form>
+
+
+
+<div id="add_box">
+  <form class="" ng-submit="vm.create()" method="post">
+    <input placeholder="Name" ng-model="vm.newBeer.name">
+    <input placeholder="Brewery" ng-model="vm.newBeer.brewery">
+    <input placeholder="Logo" ng-model="vm.newBeer.image_url">
+    <input placeholder="Description" ng-model="vm.newBeer.description">
+      <div class="buttonbg">
+        <button type="submit">Add Beer</button>
+      </div>
+    </form>
+</div>
