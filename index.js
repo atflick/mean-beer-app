@@ -8,23 +8,23 @@ var Beer = mongoose.model("Beer")
 
 app.set("port", process.env.PORT || 3001)
 
-app.set("view engine", "hbs")
-app.engine(".hbs", hbs({
-  extname:        ".hbs",
-  partialsDir:    "views/",
-  layoutsDir:     "views/",
-  defaultLayout:  "layout-main"
-}))
+// app.set("view engine", "hbs")
+// app.engine(".hbs", hbs({
+//   extname:        ".hbs",
+//   partialsDir:    "views/",
+//   layoutsDir:     "views/",
+//   defaultLayout:  "layout-main"
+// }))
 
 
 app.use("/assets", express.static("public"))
 app.use(parser.json({extended: true}))
 
-// app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/public'))
 
-app.get("/", (req, res) => {
-  res.render("beers")
-})
+// app.get("/", (req, res) => {
+//   res.render("beers")
+// })
 
 app.get("/api/beers", (req, res) => {
   Beer.find({}).then((beers) => {
@@ -55,6 +55,10 @@ app.put("/api/beers/:name", (req, res) => {
     res.json(beer)
   })
 })
+
+app.get('*', function(req, res) {
+    res.sendfile('./public/index.html');
+});
 
 app.listen(app.get("port"), () => {
   console.log('App is listening')

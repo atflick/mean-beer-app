@@ -1,3 +1,31 @@
 body {
 
 }
+
+section {
+  width: 100%;
+  display: block;
+}
+
+.shelf-top, .shelf-bg {
+  width: 900px;
+}
+
+.shelf-top {
+  background: url("../images/top-shelf.jpg");
+  height: 28px;
+}
+.shelf-bg {
+  background: url("../images/shelf.jpg");
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.beer-container {
+  /*background: url("../images/shelf-bg.jpg");*/
+  height: 205px;
+  width: 150px;
+
+}
