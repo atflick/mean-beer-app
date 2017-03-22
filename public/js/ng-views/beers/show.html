@@ -23,7 +23,7 @@
         <input ng-model="vm.beer.brewery">
         <input ng-model="vm.beer.description">
         <div class="buttonbg">
-          <button type="submit" ng-show="edit">Update</button>
+          <button type="submit" ng-click="edit = !edit" ng-show="edit">Update</button>
         </div>
       </form>
       <div class="buttonbg center">
