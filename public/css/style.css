@@ -5,10 +5,12 @@
 
 body {
   font-family: 'Josefin Slab', serif;
+  background: #212121;
 }
 
 h1 {
   font-family: 'Pacifico', cursive;
+  font-size: 50px;
 }
 
 header {
