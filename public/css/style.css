@@ -195,6 +195,10 @@ input {
   overflow-y: scroll;
 }
 
+.edit_form {
+  text-align: center;
+}
+
 h2 {
   line-height: 40px;
   margin-left: 20px;
