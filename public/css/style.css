@@ -4,7 +4,16 @@
 }
 
 body {
+  font-family: 'Josefin Slab', serif;
+}
 
+h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+header {
+  height: 100px;
+  text-align: center;
 }
 
 section {
