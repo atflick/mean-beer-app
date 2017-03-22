@@ -16,6 +16,35 @@
     "brewery": "Flying Dog",
     "image_url": "https://www.beersyndicate.com/images/beerLabels/label_thumb_15322001000299_front.jpg",
     "description": "Bloodline begins with huge grapefruit on the nose. Then, a delicate balance of citrus sweetness and bitterness. Try it with grilled light proteins, salads with fruity vinaigrettes, and fresh salsa."
+  },
+  {
+    "name": "Fat Tire",
+    "brewery": "New Belgium",
+    "image_url": "https://www.montaguebikes.com/wp-content/uploads/2013/05/fat_tire.jpg",
+    "description": "Named in honor of our co-founder's bike trip through Europe, Fat Tire Amber Ale marks a turning point in the young electrical engineer's home brewing. Fat Tire won fans with its sense of balance: toasty, biscuit-like malt flavors coasting in equilibrium with hoppy freshness. Fat Tire: Pairs well with people"
+  },
+  {
+    "name": "Trippel",
+    "brewery": "New Belgium",
+    "image_url": "http://beerpulse.com/wp-content/uploads/2013/08/NB_Trippel_12oz_Label.png",
+    "description": "his golden beer opens with a bold blast of spicy Noble hops, courtesy of Saaz and Hallertau Mittlefruh, and gives way to the fruity aromas offered by our traditional Belgian yeast. Brewed with Pilsner and Munich malts, Trippel is classically smooth and complex, and sings with a high-note of sweet citrus before a pleasantly dry finish delivers a warm, strong boozy bite. Give Trippel a sip to get you smiling."
+  },
+  {
+    "name": "60 Minute IPA",
+    "brewery": "Dogfish Head",
+    "image_url": "https://www.randyswines.com/images/sites/randyswines/labels/t45545852y_1.jpg",
+    "description": "60 Minute is brewed with a slew of great Northwest hops. A powerful but balanced East Coast IPA with a lot of citrusy hop character, it's the session beer for hardcore enthusiasts!"
+  },
+  {
+    "name": "Harpoon IPA",
+    "brewery": "Harpoon",
+    "image_url": "http://i.imgur.com/tebrS.jpg",
+    "description": "Harpoon IPA finds harmony in the combination of hops, malt, and yeast so that no single ingredient dominates the drinking experience. Floral and citrus hop notes combine with a sturdy malt backbone to impart a clean, fresh finish. Harpoon IPA is a crisp, balanced interpretation of this classic style."
+  },
+  {
+    "name": "#9",
+    "brewery": "Magic Hat",
+    "image_url": "http://www.magichat.net/img/home/numbernine-cta.jpg",
+    "description": "A sort of dry, crisp, refreshing, not quite pale ale, #9 is really impossible to describe because there’s never been anything else quite like it."
   }
-
 ]
